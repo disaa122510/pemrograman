@@ -1,0 +1,70 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMBUAT TUGAS FORM</title>
+</head>
+<style>
+    body{
+        margin-left: auto ;
+        margin-right: auto;
+        width:500px;
+    }
+    h2{
+        text-align: auto;
+    }
+</style>
+<body>
+    <h2>FORMULIR PENDAFTARAN CALON SISWA BARU SMK</h2>
+    <form action="/submit" method="post">
+        <fieldset>
+        <legend>BIODATA SISWA</legend>
+        <table>
+            <tr>
+                <td>No.UN SMP?MTs/Sederajat</td>
+                <td><input type="number" name="No_UN" required></td>
+            </tr>
+            <tr>
+                <td>Nama Lengkap:</td>
+                <td><input type="text" name="nama_lengkap" required></td>
+            </tr> 
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td><input type="radio" name="Jk" >Laki-laki <br>
+                <input type="radio" name="Jk">Perempuan 
+                </td> 
+            </tr>
+            <tr>
+                <td>Nama Orangtua/Wali:</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>Alamat (seesuai KK/KTP/Suratket. domisilmin 6 bln Ortu/Walimurid calon siswa):</td>
+                <td><textarea style="text-align: justify;">
+</textarea><br>
+</td>
+            </tr>
+            <tr>
+                <td>Kota/Kabupaten asal sekolah:</td>
+                <td><input type="text" name="kota" required></td>
+            </tr>
+            <tr>
+                <td><label for="agama">Agama</label></td>
+            <td><select name="agama" id="agama">
+                <option value="is">Islam</option>
+                <option value="Kr">Kristen</option>
+                <option value="kt">Katolik</option>
+                <option value="Hi">Hindu</option>
+                <option value="bu">Buddha</option>
+                <option value="ko">Konghucu</option>
+            </select></td>
+            </tr>
+
+
+
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>

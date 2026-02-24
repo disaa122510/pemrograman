@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemet datalist</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" name="broeser" id="browser" />
+        <datalist id="browsers">
+            <option value="chrome">
+                <option value="firefox">
+                    <option value="safari">
+                        <option value="edge">
+                            <option value="opera">
+        </datalist>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
