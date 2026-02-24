@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector dalam HTML</title>
+    <style>
+        p {
+            color:blueviolet
+        }
+        .highlight {
+            background-color: yellow;
+        }
+        #unique-section {
+            border: 2px solid red;
+            padding: 10px;
+        }
+        a[href] {
+            text-decoration: none;
+            color: green;
+        }
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contoh penggunaan selektor dalam html</h1>
+    <p>Ini adalah paragraf yang menggunakan selektor tag &lt;p&gt;</p>
+    <div class="highlight">
+        <p>ini adalah paragraf dengan kelas highlight.</p>
+    </div>
+    <div id="unique-section">
+        <p>ini adalah paragraf dalam div dengan ID "unique-section".</p>
+    </div>
+    <a href="https;//www.wxample.com" target="_blank">Link dengan atribut href</a>
+    <p>Paragraf ini menggunakan selektor universal.</p>
+</body>
+</html>
