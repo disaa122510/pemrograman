@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Grid | Columns & Rows</title>
+    <title>CSS Grid | Implicit & Explicit</title>
     <style>
         html,
         body {
@@ -12,11 +12,13 @@
             background-color: #ddd;
         }
         .container {
-            width: 600px;
+            width: 60%;
             margin: 50px auto;
             display: grid;
-            grid-template-columns: 25% auto 50px;
+            /* grid-template-columns: 25% auto 50px; */
             grid-template-rows: 50px 100px auto;
+            /* Fraction */
+            grid-template-columns: 1fr 3fr 2.5fr;
         }
         .item {
             background-color: rgb(138,209,254);
@@ -40,7 +42,6 @@
         <div class="item">Item 7</div>
         <div class="item">Item 8</div>
         <div class="item">Item 9</div>
-        <div class="item">Item 10</div>
     </div>
 </body>
 </html>

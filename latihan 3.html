@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Grid | Columns & Rows</title>
+    <title>CSS Grid | Implicit & Explicit</title>
     <style>
         html,
         body {
@@ -15,8 +15,11 @@
             width: 600px;
             margin: 50px auto;
             display: grid;
-            grid-template-columns: 25% auto 50px;
-            grid-template-rows: 50px 100px auto;
+            /* grid-template-columns: 25% auto 50px; */
+            grid-template-columns: 50px 100px auto;
+
+            /* grid Line Name */
+            grid-template-columns: [awal] 25% [kolom2] auto [k3] 50px [empat];
         }
         .item {
             background-color: rgb(138,209,254);
@@ -40,7 +43,6 @@
         <div class="item">Item 7</div>
         <div class="item">Item 8</div>
         <div class="item">Item 9</div>
-        <div class="item">Item 10</div>
     </div>
 </body>
 </html>

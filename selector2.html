@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>selector dalam html</title>
+    <title>Selektor dalam HTML</title>
     <style>
+        /* selektor tag */
         p {
-            color: blue;
+            color:blue;
             font-size: 18px;
         }
         .biru {
@@ -15,11 +16,12 @@
             background-color: blue;
         }
         #merah {
-            color: rgb(255, 255, 255);
+            color: white;
             background-color: red;
             padding: 10px;
         }
-        input [type="text"] {
+        /* selector atribut */
+        input[type="text"] {
             border: 2px solid green;
             padding: 5px;
             border: 1px solid cyan;
@@ -27,9 +29,12 @@
     </style>
 </head>
 <body>
-    <p>ini adalah paragraf dalam halaman selektor.</p>
-    <div class="biru"></div>
-    <div id="merah">ini adalah div dengan id merah</div>
-    <input type="text" placeholder="masukkan text di sini">
+    <!--selector tag <p>-->
+        <p>Ini adalah paragraf dalam halaman selektor.</p>
+        <!--selector class nama class : biru-->
+        <div class="biru"></div>
+        <!--selector id nama id : merah-->
+        <div id="merah">Ini adalah div dengan id merah</div>
+        <!--selector atribut-->
+        <input type="text" placeholder="Masukkan teks di sini">
 </body>
-</html>
